@@ -1,0 +1,10 @@
+/todo-list-crud-frontend/tmp
+/todo-list-crud-frontend/dist
+/todo-list-crud-frontend/out-tsc
+/todo-list-crud-frontend/typings
+/todo-list-crud-frontend/coverage
+/todo-list-crud-frontend/bazel-out
+/todo-list-crud-frontend/connect.lock
+/todo-list-crud-frontend/node_modules
+/todo-list-crud-frontend/.angular/cache
+/todo-list-crud-frontend/libpeerconnection.log
