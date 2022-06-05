@@ -1,0 +1,14 @@
+<form (ngSubmit)="submitOnClick()">
+	<div class="mb-3">
+		<label for="title" class="form-label">Todo Title</label>
+		<input type="text" class="form-control" id="title" name="title"
+    placeholder="Give a title" [(ngModel)]="title">
+	</div>
+	<div class="mb-3">
+		<label for="desc" class="form-label">Todo Description</label>
+		<textarea class="form-control" rows="3" id="desc" name="desc"
+    placeholder="Give a description" [(ngModel)]="desc"></textarea>
+	</div>
+	<button type="submit" class="btn btn-primary mb-3">Add Todo</button>
+	<button type="reset" class="btn btn-warning mb-3 float-right">Reset</button>
+</form>

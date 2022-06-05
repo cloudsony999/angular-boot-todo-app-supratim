@@ -1,0 +1,5 @@
+<div class="con-md">
+  <a class="btn btn-lg btn-primary mx-2" routerLink="/todo-list">Manage Your TODO</a>
+  <a class="btn btn-lg btn-danger mx-2 text-light" (click)="deleteTodosOnClick()"
+  *ngIf="showDeleteButton">Delete All TODO(s)</a>
+</div>

@@ -1,0 +1,20 @@
+<div class="container my-3">
+  <h1 class="text-center mb-4">My Todo List</h1>
+  <div class="container">
+    <h2 class="text-center">Add Todo</h2>
+    <app-add-todo (todoAdd)="addTodo($event)"></app-add-todo>
+    <hr>
+    <h2 class="text-center">Your Todo List</h2>
+    <div *ngIf="todos.length === 0; else elseBlock">
+      <marquee behavior="" direction="">
+        <h3 class="display-6 manual text-danger">No Todo(s) to display.</h3>
+      </marquee>
+    </div>
+    <ng-template #elseBlock>
+      <div *ngFor="let todo of todos" class="mb-3">
+        <app-todo-item (todoDelete)="deleteTodo($event)" [todoTitle]="todo.title" [todoItem]="todo"
+          (todoUpdate)="updateTodo($event)"></app-todo-item>
+      </div>
+    </ng-template>
+  </div>
+</div>
